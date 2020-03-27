@@ -13,6 +13,7 @@
 * [Mi primer Test]()
 * [Practicando en local]()
 * [Conclusiones]()
+* [Referencias]()
 
 ### Estructura de un proyecto Testing
 ```
@@ -35,14 +36,15 @@ También apoyarte en la parte de teoria de Git y Github que distes semanas atrá
 Para la instalación de estos recursos hemos dejado los enlaces en las referencias.
 Hemos elegido unos pequeños tutoriales muy fáciles de seguir dependiendo de la plataforma que uses (Win/Lin/Mac).
 
-Siempre puedes apoyarte en el profesor en caso de que surja algún problema.
-
 Para saber que todo está correctamente instalado debemos abrir la terminal git-bash y ejecutar estos comandos:
     '$ node -v'
     '$ npm -v'
 
 Dichos comandos deben de mostrar las versiones de cada recurso.
 En caso de que no estén bien instaladas, saldrá un error.
+
+Siempre puedes apoyarte en el profesor en caso de que surja algún problema.
+
 ```
 
 #### Jest - Framework Testing
@@ -71,7 +73,7 @@ Valida que la terminal te ha mostrado un mensaje terminado como este:
 Para saber que todo se ha instalado correctamente, dentro de nuestra carpeta ejecutamos el comando:
     $ ls
 
-Debes visualizar estas dos carpetas:
+Debes visualizar estas dos elementos:
     $ node_modules/  package-lock.json
     
 Para poder ejecutar 'Jest' se necesita crear un fichero y añadir la dependencia.
@@ -88,6 +90,12 @@ En la terminal, abrimos nuestro editor y copiamos el siguiente código:
 '
 Guardamos y cerramos el editor.
 
+Para saber que todo se ha seguido correctamente, dentro de nuestra carpeta ejecutamos el comando:
+    $ ls
+
+Debes visualizar estos tres elementos:
+    $node_modules/  package.json  package-lock.json
+    
 ```
 
 ### Mi primer Test
@@ -197,7 +205,11 @@ Debemos de obtener la siguiente salida:
 
 ### Conclusiones
 ```
-
+Esta práctica ha sido guiada para poder familiarizarse con el entorno de testing de Jest.
+Se han usado comandos de bash.
+Se ha instalado node-js y npm.
+Se ha creado una solución de cero y se ha configurado la carpeta para el lanzamiento de un test con Jest.
+Se ha explicado los elementos necesarios para poder definir una función y poder testearla.
 ```
 
 ### Referencias
@@ -205,5 +217,6 @@ Debemos de obtener la siguiente salida:
 * [Instalación node-js & npm Windows](https://tutobasico.com/instalar-nodejs-y-npm/)
 * [Instalación node-js & npm Linux](https://luismasdev.com/instalar-nodejs-en-windows/)
 * [Instalacion node-js & npm Mac](https://medium.com/javascript-comunidad/c%C3%B3mo-instalar-node-js-y-npm-en-mac-9d80f26fb88d)
+
 
 
