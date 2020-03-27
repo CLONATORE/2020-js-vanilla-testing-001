@@ -40,6 +40,9 @@ Siempre puedes apoyarte en el profesor en caso de que surja algún problema.
 Para saber que todo está correctamente instalado debemos abrir la terminal git-bash y ejecutar estos comandos:
     '$ node -v'
     '$ npm -v'
+
+Dichos comandos deben de mostrar las versiones de cada recurso.
+En caso de que no estén bien instaladas, saldrá un error.
 ```
 
 #### Jest - Framework Testing
@@ -86,19 +89,19 @@ En la propia carpeta '001-testing' ejecutamos el siguiente comando:
 Dicho fichero va a permitir a 'Jest' ejecutar la bateria de Test que vamos a crear.
 En la terminal, abrimos nuestro editor y copiamos el siguiente código:
 
-'
-    const concatenar = require('./test01.js');
+' 
+    const concatenar = require('./test01.js');                                       //L-1
 
-    test('Concatena Hello + Victor to equal "Hello Victor"', function () => {
+    test('Concatena Hello + Victor to equal "Hello Victor"', function () => {        //L-3
     // Arrange
-    var expected = "Hello Victor";
+    var expected = "Hello Victor";                                                   //L-5
 
     // Act
-    var result = concatenar("Victor");
-
+    var result = concatenar("Victor");                                               //L-8
+    
     // Assert
-    expect(result).toBe(expected);
-    });
+    expect(result).toBe(expected);                                                   //L-11
+    });                                                                              //L-12
 
 '
 
@@ -106,8 +109,18 @@ Fíjese que estamos diseñando un test sin tener la implementación todavía.
 Estamos dando por hecho que nuestra función 'concatenar' necesita un parámetro de entrada
 y el resultado es la concatenación con la palabra "Hello".
 
-Ahora vamos a rellenar de contenido el fichero 
+A continuación describimos cada una de las líneas:
 
+L-1  - Permite a 'Jest' acceder a la función de nuestro algoritmo de concatenación.
+L-3  - Define la cabecera de una función de Testing para el framework de 'Jest'. 
+L-5  - Inicializamos variables.
+L-8  - Llamámos al método de nuestro Test.
+L-11 - Comparamos nuestro resultado esperado con el resultado del método que hemos desarrollado.
+L-12 - Cierre de la función.
+
+Cerramos el editor y volvemos a la terminal.
+
+Ahora vamos a desarrollar nuestro algoritmo de concatenación:
 
 En la propia carpeta '001-testing' ejecutamos el siguiente comando:
     $ touch test01.js
@@ -115,7 +128,28 @@ En la propia carpeta '001-testing' ejecutamos el siguiente comando:
 En este fichero vamos añadir una pequeña función que devuelva una 'string' concatenendo un 
 parámetro de entrada.
 
+Abrimos nuestro editor y copiamos el siguiente código:
 
+' 
+    function concatenar(param) {                                                     //L-1
+        return "Hello "+param;                                                       //L-2
+    }                                                                                //L-3
+   
+    module.exports = concatenar;                                                     //L-5
+'
+
+A continuación describimos cada una de las líneas:
+
+
+L-1  - Define la cabecera de nuestro algoritmo, junto con el parametro de entrada.
+L-2  - Línea que indica la devolución del resultado de nuestro método.
+L-3  - Cierre de nuestro algoritmo.
+L-5  - Almacena la función 'concatenar' en una variable que luego 'Jest' recupera con 
+       la línea 1 del fichero suite.test.js 
+       
+Cerramos el editor y volvemos a la terminal.
+       
+       
 ```
 
 ### Practicando en local
