@@ -181,7 +181,7 @@ Cerramos el editor y volvemos a la terminal.
 
 ### Practicando en local
 ```
-Ahora simplemente vamos a lanzar Jest por la terminal para comprar que nuestro test es correcto.
+Ahora simplemente vamos a lanzar Jest por la terminal para comparar que nuestro test es correcto.
 
 Ejecutamos el siguiente comando :
     $ npm run test
@@ -208,8 +208,11 @@ Debemos de obtener la siguiente salida:
 Esta práctica ha sido guiada para poder familiarizarse con el entorno de testing de Jest.
 Se han usado comandos de bash.
 Se ha instalado node-js y npm.
+Se ha instalado a través de npm Jest en nuestra carpeta local.
 Se ha creado una solución de cero y se ha configurado la carpeta para el lanzamiento de un test con Jest.
 Se ha explicado los elementos necesarios para poder definir una función y poder testearla.
+
+En la siguiente práctica simplemente tendrás que asentar conceptos.
 ```
 
 ### Referencias
