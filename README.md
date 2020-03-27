@@ -16,17 +16,17 @@
 
 ### Estructura de un proyecto Testing
 ```
-Para la realización de un desarrollo guiado por pruebas aka 'Development Testing' se necesita tener un entorno 
-configurado para la realización de las mismas en local.
+Para la realización de un desarrollo guiado por pruebas aka 'Development Testing' se necesita 
+tener un entorno configurado para la realización de las mismas en local.
 
-Para practicar vamos a usar JavaScript Vanilla como lenguaje de programación.
-Por encima usaremos un Framework de Testing denominado 'Jest'. Éste permite de manera muy simple hacer pequeñas pruebas
-para llegar a nuestro propósito de desarrollo.
+En la practica vamos a usar JavaScript Vanilla como lenguaje de programación.
+Por encima usaremos un Framework de Testing denominado 'Jest'. Éste permite de manera muy simple
+hacer pequeñas pruebas para llegar a nuestro propósito de desarrollo.
 ```
 
 ### Requisitos
 ```
-Para poder ejecutar estas pruebas en tu local debes de instalar este pequeño stack.
+Es necesario para poder ejecutar estas pruebas en tu local que tengas instalado un pequeño stack.
 También apoyarte en la parte de teoria de Git y Github que distes semanas atrás.
 ```
 
@@ -35,11 +35,35 @@ También apoyarte en la parte de teoria de Git y Github que distes semanas atrá
 Para la instalación de estos recursos hemos dejado los enlaces en las referencias.
 Hemos elegido unos pequeños tutoriales muy fáciles de usar dependiendo de la plataforma que uses (Win/Lin/Mac).
 
-Siempre puedes apoyarte en el profesor en caso de que surja un problema.
+Siempre puedes apoyarte en el profesor en caso de que surja algún problema.
 ```
 
 #### Jest - Framework Testing
 ```
+Una vez hayas instalado Node-js y npm simplemente tienes que abrir la terminal de git-bash.
+
+Crea una carpeta llamada '001-testing':
+    '$ mdkir 001-testing'
+    
+Accede a ella :
+    '$ cd 001-testing'
+
+Instala 'Jest' con el siguiente comando:
+    'npm install --save-dev jest'
+ 
+Valida que la terminal te ha mostrado un mensaje terminado como este:
+      npm WARN 001-testing No description
+      npm WARN 001-testing No repository field.
+      npm WARN 001-testing No README data
+      npm WARN 001-testing No license field.
+     
+      + jest@25.2.3
+      added 474 packages from 282 contributors and audited 1095501 packages in 31.784s
+      found 0 vulnerabilities
+
+Para saber que todo se ha instalado correctamente ejecuta el comando 'ls'. Debes
+visualizar estas dos carpetas.
+     'node_modules/  package-lock.json'
 ```
 
 ### Mi primer Test
