@@ -23,12 +23,15 @@ tener un entorno configurado para la realización de las mismas en local.
 En la practica vamos a usar JavaScript Vanilla como lenguaje de programación.
 Por encima usaremos un Framework de Testing denominado 'Jest'. Éste permite de manera muy simple
 hacer pequeñas pruebas para llegar a nuestro propósito de desarrollo.
+
+Para poder usar 'Jest' vamos a tener que instalar un distribuidor de paquetes llamado 'npm'.
+Para poder usar 'npm' necesitamos tener instalado node-js.
 ```
 
 ### Requisitos
 ```
 Es necesario para poder ejecutar estas pruebas en tu local que tengas instalado un pequeño stack.
-También apoyarte en la parte de teoria de Git y Github que distes semanas atrás.
+También apoyarte en la parte de teoria.
 ```
 
 #### Node-js & npm
