@@ -33,9 +33,13 @@ También apoyarte en la parte de teoria de Git y Github que distes semanas atrá
 #### Node-js & npm
 ```
 Para la instalación de estos recursos hemos dejado los enlaces en las referencias.
-Hemos elegido unos pequeños tutoriales muy fáciles de usar dependiendo de la plataforma que uses (Win/Lin/Mac).
+Hemos elegido unos pequeños tutoriales muy fáciles de seguir dependiendo de la plataforma que uses (Win/Lin/Mac).
 
 Siempre puedes apoyarte en el profesor en caso de que surja algún problema.
+
+Para saber que todo está correctamente instalado debemos abrir la terminal git-bash y ejecutar estos comandos:
+    '$ node -v'
+    '$ npm -v'
 ```
 
 #### Jest - Framework Testing
@@ -43,13 +47,13 @@ Siempre puedes apoyarte en el profesor en caso de que surja algún problema.
 Una vez hayas instalado Node-js y npm simplemente tienes que abrir la terminal de git-bash.
 
 Crea una carpeta llamada '001-testing':
-    '$ mdkir 001-testing'
+    $ mdkir 001-testing
     
 Accede a ella :
-    '$ cd 001-testing'
+    $ cd 001-testing
 
 Instala 'Jest' con el siguiente comando:
-    'npm install --save-dev jest'
+    $ npm install --save-dev jest
  
 Valida que la terminal te ha mostrado un mensaje terminado como este:
       npm WARN 001-testing No description
@@ -61,13 +65,57 @@ Valida que la terminal te ha mostrado un mensaje terminado como este:
       added 474 packages from 282 contributors and audited 1095501 packages in 31.784s
       found 0 vulnerabilities
 
-Para saber que todo se ha instalado correctamente ejecuta el comando 'ls'. Debes
-visualizar estas dos carpetas.
-     'node_modules/  package-lock.json'
+Para saber que todo se ha instalado correctamente, dentro de nuestra carpeta ejecutamos el comando:
+    $ ls
+
+Debes visualizar estas dos carpetas:
+    $ node_modules/  package-lock.json
+     
 ```
 
 ### Mi primer Test
 ```
+Para proceder a nuestro primer test, necesitamos crear dos fichero de texto plano.
+
+Un primer fichero debe de contener nuestro algoritmo (test01.js)
+El segundo fichero es necesario para que 'Jest' pueda lanzar el test de nuestro algoritmo (suite.test.js).
+
+En la propia carpeta '001-testing' ejecutamos el siguiente comando:
+    $ touch suite.test.js
+
+Dicho fichero va a permitir a 'Jest' ejecutar la bateria de Test que vamos a crear.
+En la terminal, abrimos nuestro editor y copiamos el siguiente código:
+
+'
+    const concatenar = require('./test01.js');
+
+    test('Concatena Hello + Victor to equal "Hello Victor"', function () => {
+    // Arrange
+    var expected = "Hello Victor";
+
+    // Act
+    var result = concatenar("Victor");
+
+    // Assert
+    expect(result).toBe(expected);
+    });
+
+'
+
+Fíjese que estamos diseñando un test sin tener la implementación todavía.
+Estamos dando por hecho que nuestra función 'concatenar' necesita un parámetro de entrada
+y el resultado es la concatenación con la palabra "Hello".
+
+Ahora vamos a rellenar de contenido el fichero 
+
+
+En la propia carpeta '001-testing' ejecutamos el siguiente comando:
+    $ touch test01.js
+
+En este fichero vamos añadir una pequeña función que devuelva una 'string' concatenendo un 
+parámetro de entrada.
+
+
 ```
 
 ### Practicando en local
