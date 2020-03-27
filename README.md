@@ -123,13 +123,13 @@ En la terminal, abrimos nuestro editor y copiamos el siguiente código:
 
     test('Concatena Hello + Victor to equal "Hello Victor"', function ()    {        //L-3
     // Arrange
-    var expected = "Hello Victor";                                                   //L-5
+    var toBe = "Hello Victor";                                                       //L-5
 
     // Act
     var result = concatenar("Victor");                                               //L-8
     
     // Assert
-    expect(result).toBe(expected);                                                   //L-11
+    expect(result).toBe(toBe);                                                       //L-11
     });                                                                              //L-12
 
 '
