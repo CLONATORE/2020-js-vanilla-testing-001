@@ -214,8 +214,7 @@ Se ha instalado node-js y npm.
 Se ha instalado a través de npm Jest en nuestra carpeta local.
 Se ha creado una solución de cero y se ha configurado la carpeta para el lanzamiento de un test con Jest.
 Se ha explicado los elementos necesarios para poder definir una función y poder testearla.
-
-En la siguiente práctica simplemente tendrás que asentar conceptos.
+Se han adoptado premisas de metodología ágil.
 ```
 
 ### Referencias
