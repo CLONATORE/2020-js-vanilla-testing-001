@@ -73,7 +73,21 @@ Para saber que todo se ha instalado correctamente, dentro de nuestra carpeta eje
 
 Debes visualizar estas dos carpetas:
     $ node_modules/  package-lock.json
-     
+    
+Para poder ejecutar 'Jest' se necesita crear un fichero y añadir la dependencia.
+    $ touch package.json
+
+En la terminal, abrimos nuestro editor y copiamos el siguiente código:
+
+'
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+'
+Guardamos y cerramos el editor.
+
 ```
 
 ### Mi primer Test
@@ -83,6 +97,10 @@ Para proceder a nuestro primer test, necesitamos crear dos fichero de texto plan
 Un primer fichero debe de contener nuestro algoritmo (test01.js)
 El segundo fichero es necesario para que 'Jest' pueda lanzar el test de nuestro algoritmo (suite.test.js).
 
+```
+
+#### Fichero Suite Test
+```
 En la propia carpeta '001-testing' ejecutamos el siguiente comando:
     $ touch suite.test.js
 
@@ -92,7 +110,7 @@ En la terminal, abrimos nuestro editor y copiamos el siguiente código:
 ' 
     const concatenar = require('./test01.js');                                       //L-1
 
-    test('Concatena Hello + Victor to equal "Hello Victor"', function () => {        //L-3
+    test('Concatena Hello + Victor to equal "Hello Victor"', function ()    {        //L-3
     // Arrange
     var expected = "Hello Victor";                                                   //L-5
 
@@ -119,7 +137,10 @@ L-11 - Comparamos nuestro resultado esperado con el resultado del método que he
 L-12 - Cierre de la función.
 
 Cerramos el editor y volvemos a la terminal.
+````
 
+#### Fichero de Test
+```
 Ahora vamos a desarrollar nuestro algoritmo de concatenación:
 
 En la propia carpeta '001-testing' ejecutamos el siguiente comando:
@@ -148,16 +169,35 @@ L-5  - Almacena la función 'concatenar' en una variable que luego 'Jest' recupe
        la línea 1 del fichero suite.test.js 
        
 Cerramos el editor y volvemos a la terminal.
-       
-       
 ```
 
 ### Practicando en local
 ```
+Ahora simplemente vamos a lanzar Jest por la terminal para comprar que nuestro test es correcto.
+
+Ejecutamos el siguiente comando :
+    $ npm run test
+    
+Debemos de obtener la siguiente salida:
+    '
+        > @ test C:\Users\vbolinches\Documents\001-testing
+        > jest
+
+        PASS ./suite.test.js
+          √ Concatena Hello + Victor to equal "Hello Victor" (3ms)
+
+        Test Suites: 1 passed, 1 total
+        Tests:       1 passed, 1 total
+        Snapshots:   0 total
+        Time:        3.892s
+        Ran all test suites.
+    '
+
 ```
 
 ### Conclusiones
 ```
+
 ```
 
 ### Referencias
