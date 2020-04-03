@@ -1,7 +1,7 @@
 # 2020-js-vanilla-testing-001
 
 <p align="center">
-    <img src="https://github.com/GeeksHubsAcademy/hello-world/blob/master/assets/media/logo/logo.png" >	
+    <img src="https://github.com/GeeksHubsAcademy/2020-geekshubs-media/blob/master/image/logo.png" >	
 </p>
 
 ## Temario
@@ -224,7 +224,9 @@ Se han adoptado premisas de metodología ágil.
 * [Instalacion node-js & npm Mac](https://medium.com/javascript-comunidad/c%C3%B3mo-instalar-node-js-y-npm-en-mac-9d80f26fb88d)
 
 
-  <div>
+
+
+<div>
     <p align="center">
         <img src="https://github.com/GeeksHubsAcademy/2020-geekshubs-media/blob/master/image/pixel.png" >	
     </p>
@@ -232,7 +234,7 @@ Se han adoptado premisas de metodología ágil.
   
   <footer>
      <div>
-        <a href="https://github.com/GeeksHubsAcademy/2020-js-vanilla-testing-0000"><< Atrás</a>
+        <a href="https://github.com/GeeksHubsAcademy/2020-js-vanilla-testing-000"><< Atrás</a>
          <a href="https://github.com/GeeksHubsAcademy/2020-js-vanilla-testing-001/blob/master/README.md#referencias">
         <img src="https://github.com/GeeksHubsAcademy/2020-geekshubs-media/blob/master/image/pixel.png" align="center"                  height="10" width="714"/>
          </a>
